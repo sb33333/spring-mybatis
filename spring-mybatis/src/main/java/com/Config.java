@@ -29,7 +29,7 @@ public class Config {
 		sqlSessionFactoryBean.setDataSource(dataSource);
 		sqlSessionFactoryBean.setMapperLocations(applicationContext.getResources("classpath:/mapper/**/sql-*.xml"));
 		sqlSessionFactoryBean.setConfiguration(mybatisConfig());
-		return sqlSessionFactoryBean.ge`tObject();
+		return sqlSessionFactoryBean.getObject();
 	}
 	
 	@Bean
